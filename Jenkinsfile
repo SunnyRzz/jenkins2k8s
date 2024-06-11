@@ -12,7 +12,7 @@ pipeline{
                     sleep 30
                     sh './kubectl create -f backend.yaml'
                     sh './kubectl create -f frontend.yaml'
-                    sleep 30
+                    sleep 120
                     sh './kubectl get pods'
                     sh './kubectl get svc'
                     script {
